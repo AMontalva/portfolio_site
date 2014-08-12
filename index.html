@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var pull        = $('#pull');
+                menu        = $('nav ul');
+                menuHeight  = menu.height();
+
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="wrap">
+            <header>
+                <div id = "h1Nav">
+                    <h1 id="logo"><a href="index.html">Antonio Montalvo</a></h1>
+                    <nav id="headerNav" class="clearfix">
+                        <ul class="clearfix">
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about_me.html">About Me</a></li>
+                            <li><a href="process.html">Process</a></li>
+                            <li><a href="work.html">Work</a></li>                            
+                        </ul>
+                        <a href="#" id="pull">Menu</a>
+                    </nav>
+                </div>
+            </header>
+            <article id="taglineServices">
+                <section id="tagline">
+                <h3>Tagline</h3>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, suscipit, dolorum praesentium vel aut odio quis. Porro, numquam, accusantium, provident ea soluta amet asperiores cumque saepe eum iste iusto nihil.</div>
+                </section>
+                <section id="services">
+                <h3>Services</h3>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, suscipit, dolorum praesentium vel aut odio quis. Porro, numquam, accusantium, provident ea soluta amet asperiores cumque saepe eum iste iusto nihil.</div>           
+                </section>
+            </article>
+            <article id="workContainer">
+                <h3 class="title">Recent Work</h3>
+                <ol id="workList">
+                    <li id="project1" class="figure">
+                        <a href="#">
+                            <img src="img/grampa_simpson.png" alt="">
+                            <span class="figcaption">Project 1</span>
+                        </a>
+                    </li><!-- /end .figure -->
+                    <li id="project2" class="figure">
+                        <a href="#">
+                            <img src="img/grampa_simpson.png" alt="">
+                            <span class="figcaption">Project 2</span>
+                        </a>
+                    </li><!-- /end .figure -->
+                    <li id="project3" class="figure">
+                        <a href="#">
+                            <img src="img/grampa_simpson.png" alt="">
+                            <span class="figcaption">Project 3</span>
+                        </a>
+                    </li><!-- /end .figure -->
+                    <li id="project4" class="figure">
+                        <a href="#">
+                            <img src="img/grampa_simpson.png" alt="">
+                            <span class="figcaption">Project 4</span>
+                        </a>
+                    </li><!-- /end .figure -->
+                    <li id="project5" class="figure">
+                        <a href="#">
+                            <img src="img/grampa_simpson.png" alt="">
+                            <span class="figcaption">Project 5</span>
+                        </a>
+                    </li><!-- /end .figure -->
+                    <li id="project6" class="figure">
+                        <a href="#">
+                            <img src="img/grampa_simpson.png" alt="">
+                            <span class="figcaption">Project 6</span>
+                        </a>
+                    </li><!-- /end .figure -->
+                </ol>
+            </article>
+            <footer>
+                <nav id="footerNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="contactFooter"></div>
+            </footer>
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
