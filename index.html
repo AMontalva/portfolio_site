@@ -11,15 +11,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery.hcaptions.js"></script>
     <script>
         $(function() {
             var pull        = $('#pull');
-                menu        = $('nav ul');
+                menu        = $('#headerNav ul');
                 menuHeight  = menu.height();
 
             $(pull).on('click', function(e) {
@@ -34,8 +37,26 @@
                 }
             });
         });
+
+        $(document).ready(function() {
+            $('.fade').hover(
+                function() {
+                    var w = $(this).width();
+                    var h = $(this).height();
+
+                    $(".caption").css({"width": w, "height": h});
+                    $(this).find('.caption').fadeIn(250);
+                    console.log(w, h);
+                },
+                function() {
+                    $(this).find('.caption').fadeOut(250);
+                }
+            );
+        });
+
+
     </script>
-        
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -43,85 +64,140 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="wrap">
             <header>
-                <div id = "h1Nav">
-                    <h1 id="logo"><a href="index.html">Antonio Montalvo</a></h1>
-                    <nav id="headerNav" class="clearfix">
-                        <ul class="clearfix">
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="about_me.html">About Me</a></li>
-                            <li><a href="process.html">Process</a></li>
-                            <li><a href="work.html">Work</a></li>                            
-                        </ul>
-                        <a href="#" id="pull">Menu</a>
-                    </nav>
+                <div id="h1Nav">
+                  <div id= "logo">
+                        <div id="circle">
+                        <a href="index.html">
+                          <div id="nameText">
+                            Antonio <br/>Montalvo
+                          </div>
+                        </a>
+                          <div id="line"></div>
+                          <div id="webText">Web Designer/Developer</div>
+                        </div>
+                    </div>
+
+                  <nav id="headerNav" class="clearfix">
+                    <ul class="clearfix">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="work.html">Work</a></li>                   
+                    </ul>
+                    <a href="#" id="pull">Menu<div id="navicon">&#9776</div></a>
+                  </nav>
+
                 </div>
             </header>
-            <article id="taglineServices">
-                <section id="tagline">
-                <h3>Tagline</h3>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, suscipit, dolorum praesentium vel aut odio quis. Porro, numquam, accusantium, provident ea soluta amet asperiores cumque saepe eum iste iusto nihil.</div>
-                </section>
-                <section id="services">
-                <h3>Services</h3>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, suscipit, dolorum praesentium vel aut odio quis. Porro, numquam, accusantium, provident ea soluta amet asperiores cumque saepe eum iste iusto nihil.</div>           
-                </section>
+
+            <article id="tagline">
+            <p>Hey yo! My name is Antonio, I am currently a student at UCI and I enjoy making websites.</p>
             </article>
+          
             <article id="workContainer">
-                <h3 class="title">Recent Work</h3>
+                <h2>Recent Work</h2>
+
                 <ol id="workList">
-                    <li id="project1" class="figure">
+                    <li id="project1" class="figure fade">
+                        <div class="caption">
+                            <h3>Project 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><a href="#" class="learn-more">Learn more</a></p>
+                        </div>                    
                         <a href="#">
-                            <img src="img/grampa_simpson.png" alt="">
-                            <span class="figcaption">Project 1</span>
+                            <img src="http://placehold.it/500x500">
+                            <div id="hiddenText"></div>
+                        </a>
+                    <li id="project2" class="figure fade">
+                        <div class="caption">
+                            <h3>Project 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><a href="#" class="learn-more">Learn more</a></p>
+                        </div>                    
+                        <a href="#">
+                            <img src="http://placehold.it/500x500">
+                            <div id="hiddenText"></div>
                         </a>
                     </li><!-- /end .figure -->
-                    <li id="project2" class="figure">
+                    <li id="project3" class="figure fade">
+                        <div class="caption">
+                            <h3>Project 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><a href="#" class="learn-more">Learn more</a></p>
+                        </div>                    
                         <a href="#">
-                            <img src="img/grampa_simpson.png" alt="">
-                            <span class="figcaption">Project 2</span>
+                            <img src="http://placehold.it/500x500">
+                            <div id="hiddenText"></div>
                         </a>
                     </li><!-- /end .figure -->
-                    <li id="project3" class="figure">
+                    <li id="project4" class="figure fade">
+                        <div class="caption">
+                            <h3>Project 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><a href="#" class="learn-more">Learn more</a></p>
+                        </div>                    
                         <a href="#">
-                            <img src="img/grampa_simpson.png" alt="">
-                            <span class="figcaption">Project 3</span>
+                            <img src="http://placehold.it/500x500">
+                            <div id="hiddenText"></div>
                         </a>
                     </li><!-- /end .figure -->
-                    <li id="project4" class="figure">
+                    <li id="project5" class="figure fade">
+                        <div class="caption">
+                            <h3>Project 5</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><a href="#" class="learn-more">Learn more</a></p>
+                        </div>                    
                         <a href="#">
-                            <img src="img/grampa_simpson.png" alt="">
-                            <span class="figcaption">Project 4</span>
+                            <img src="http://placehold.it/500x500">
+                            <div id="hiddenText"></div>
                         </a>
                     </li><!-- /end .figure -->
-                    <li id="project5" class="figure">
+                    <li id="project6" class="figure fade">
+                        <div class="caption">
+                            <h3>Project 6</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><a href="#" class="learn-more">Learn more</a></p>
+                        </div>                    
                         <a href="#">
-                            <img src="img/grampa_simpson.png" alt="">
-                            <span class="figcaption">Project 5</span>
-                        </a>
-                    </li><!-- /end .figure -->
-                    <li id="project6" class="figure">
-                        <a href="#">
-                            <img src="img/grampa_simpson.png" alt="">
-                            <span class="figcaption">Project 6</span>
+                            <img src="http://placehold.it/500x500">
+                            <div id="hiddenText"></div>
                         </a>
                     </li><!-- /end .figure -->
                 </ol>
-            </article>
-            <footer>
-                <nav id="footerNav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="about_me.html">About Me</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div id="contactFooter"></div>
-            </footer>
-        </div>
+            </article>    
+            <div id="footer">
+                <div id="footerContainer">
+                    <nav id="footerNav" class="footerDivider verticleLine">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about_me.html">About Me</a></li>
+                            <li><a href="work.html">Work</a></li>  
+                        </ul>
+                    </nav>
 
+                    <nav id="footerSocialMedia" class="footerDivider verticleLine">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Github</a></li>
+                            <li><a href="#">Tumblr</a></li>
+                        </ul>
+                    </nav>
+                    <div id="footerContact" class="footerDivider"> 
+                        <h3>Get In Touch</h3>
+                        <p>(123) 456-7890</p>
+                        <p>antonio.montalvo.87@gmail.com</p>
+                    </div>
+
+                </div>
+                <div id="copywrite">
+                    Copyright © 2014 RG Consulting. All rights reserved.
+                </div>
+            </div>  
+
+               
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
