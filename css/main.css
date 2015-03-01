@@ -97,7 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -109,7 +108,7 @@ header {
     height: 100px;
     width: 100%;
     display: block;
-    background-color: #FC9D4B;
+    background-color: #FF851B;               
 }
 
 #h1Nav {
@@ -136,22 +135,24 @@ header {
 #nameText {padding-top: 20px;font-size: 30px;text-align: center;color: #FFFFFF;line-height: 30px;font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#line {padding-top: 10px;width: 80%; margin-left: auto;margin-right: auto;border-bottom: #FFFFFF solid 1px;
+#line {padding-top: 10px;width: 80%; margin-left: auto;margin-right: auto;border-bottom: #FF851B solid 1px;
 }
 
-#webText {font-size: 16px;text-align: center;color: #FC9D4B;margin-top: 4px;font-family: 'Open Sans Condensed', sans-serif;
+#webText {font-size: 16px;text-align: center;color: #FFFFFF;margin-top: 4px;font-family: 'Open Sans Condensed', sans-serif;
 }
 
-a#nameText:active, a#nameText:focus {
-    outline: none;
+a#logo {
+    cursor: pointer;
 }
+
+
 /*======================NAV=====================*/
 
 
 
 #headerNav {
     float: right;
-    background-color: #FC9D4B;
+    background-color: none;
 }
 
 #headerNav ul {
@@ -217,7 +218,6 @@ a#nameText:active, a#nameText:focus {
     text-align: center;
     font-size: 45px;
     margin-bottom: 0px;
-    border-bottom: 1px solid black;
 }
 
 #workContainer ol {
@@ -261,7 +261,7 @@ a#nameText:active, a#nameText:focus {
     background: rgba(0, 0, 0, 0.70);
 }
 .caption h3, .caption p {
-    color: #fff;
+    color: #FFFFFF;
     margin: 20px;
 }
 .caption h3 {
@@ -274,16 +274,16 @@ a#nameText:active, a#nameText:focus {
 }
 .caption a.learn-more {
     padding: 5px 10px;
-    background: #FC9D4B;
-    color: #fff;
+    background: #FF851B;
+    color: #FFFFFF;
     border-radius: 2px;
     -moz-border-radius: 2px;
     font-weight: bold;
     text-decoration: none;
 }
 .caption a.learn-more:hover {
-    background: #fff;
-    color: #FC9D4B;
+    background: #FFFFFF;
+    color: #FF851B;
 }
 
 li#project3, li#project6 {
@@ -307,6 +307,9 @@ li#project3, li#project6 {
     color: #2D2D2D;
 }
 
+
+
+
 #footerContainer {
   width: 80%;
   height: 160px;
@@ -329,22 +332,12 @@ li#project3, li#project6 {
   margin-left: -40px; 
 }
 
-#footerNav ul li {
-}
-
-#footerNav ul li a {
-  color: #E5EDF0; 
+#footer a:hover, nav a:active {
+    color: #FF851B;
 }
 
 #footerSocialMedia ul {
   margin-left: -40px; 
-}
-
-#footerSocialMedia ul li {
-}
-
-#footerSocialMedia ul li a {
-  color: #E5EDF0; 
 }
 
 #footerContact {
@@ -366,6 +359,137 @@ li#project3, li#project6 {
   margin-left: auto;
   margin-right: auto; 
 }
+
+
+/*==================ABOUT.HTML===================*/
+/*==================ABOUT.HTML===================*/
+/*==================ABOUT.HTML===================*/
+
+#about {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    clear: both;
+}
+
+.about__skill_frontend {
+    float: left;
+    width: 50%;
+}
+
+.about__skill_software {
+    float: right;
+    width: 50%;
+}
+
+
+.about__skill_frontend ul, .about__skill_software ul {
+    margin-left: -20px;
+}
+
+@media(max-width: 420px) {
+    #about {
+        width: 90%;
+    }
+}
+
+/*==================WORK.HTML===================*/
+/*==================WORK.HTML===================*/
+/*==================WORK.HTML===================*/
+
+#work {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    padding-top: 20px;
+}
+
+#work a {
+    color: #000000;
+}
+
+.project {
+    display: inline-block;
+    padding-bottom: 40px;
+}
+
+.project__desc {
+    width: 40%;
+    float: left;
+}
+
+#work h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.project__img {
+    width: 50%;
+    float: right;
+}
+
+.project__img img {
+    width: 100%;
+}
+
+/*==================CONTACT.HTML===================*/
+/*==================CONTACT.HTML===================*/
+/*==================CONTACT.HTML===================*/
+
+form {
+    clear: both;
+    width:459px;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+}
+
+    input:focus, textarea:focus {
+        border:1px solid #97d6eb;
+    }
+
+textarea {
+    height:213px;
+    font-family:Arial, Helvetica, sans-serif;
+    background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+button[type=submit] {
+    background-color: #FF851B;
+    width:127px;
+    height:38px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    color: #FFFFFF;
+}
+
+    button[type=submit]:hover {
+        opacity:0.9;
+    }
+
 
 
 /* ==========================================================================
@@ -474,38 +598,7 @@ li#project3, li#project6 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media (max-width: 560px) {
 
-    #footerContainer {
-      width: 90%;
-      height: 360px;
-      text-align: center;
-    }    
-
-    .footerDivider {
-      width: 100%;
-      float: none !important;
-      padding-left: 0;
-      padding-right: 0; 
-    }    
-
-    .verticleLine {
-      border-right: none;
-      height: 120px; 
-    }   
-
-    #footerContact {
-      margin-top: -10px; 
-    }    
-
-    #copywrite {
-        text-align: center;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: .9em;
-    }
-}
 
 
 @media (max-width: 1220px) {
@@ -660,7 +753,38 @@ li#project3, li#project6 {
         width: 90%;
     }
 
+    #footerContainer {
+      width: 90%;
+      height: 360px;
+      text-align: center;
+    }    
+
+    .footerDivider {
+      width: 100%;
+      float: none !important;
+      padding-left: 0;
+      padding-right: 0; 
+    }    
+
+    .verticleLine {
+      border-right: none;
+      height: 120px; 
+    }   
+
+    #footerContact {
+      margin-top: -10px; 
+    }    
+
+    #copywrite {
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .9em;
+    }
+
 }
+
 
 @media (max-width: 360px) {
     .caption h3 {
@@ -728,7 +852,7 @@ li#project3, li#project6 {
 
     #headerNav a#pull {
         display: block;
-        background-color: #FC9D4B;
+        background-color: #FF851B;
         width: 100%;
         position: relative;
     }
