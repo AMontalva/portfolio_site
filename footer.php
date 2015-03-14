@@ -81,8 +81,8 @@
             $(document).ready(function() {
                 $("#logo").hover(
                     function() {
-                        $("#nameText").css("color", "#FF851B");
-                        $("#webText").css("color", "#FF851B");
+                        $("#nameText").css("color", "#FF7052");
+                        $("#webText").css("color", "#FF7052");
                     },
                     function() {
                         $("#nameText").css("color", "#FFFFFF");

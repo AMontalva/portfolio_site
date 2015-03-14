@@ -12,7 +12,7 @@ $(document).ready(function() {
 		var formData = {
 			'name' 				: $('input[name=name]').val(),
 			'email' 			: $('input[name=email]').val(),
-			'superheroAlias' 	: $('textarea[name=superheroAlias]').val()
+			'messageText' 	: $('textarea[name=messageText]').val()
 		};
 
 		// process the form
@@ -44,10 +44,10 @@ $(document).ready(function() {
 						$('#email-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
 					}
 
-					// handle errors for superhero alias ---------------
-					if (data.errors.superheroAlias) {
-						$('#superhero-group').addClass('has-error'); // add the error class to show red input
-						$('#superhero-group').append('<div class="help-block">' + data.errors.superheroAlias + '</div>'); // add the actual error message under our input
+					// handle errors for message text alias ---------------
+					if (data.errors.messageText) {
+						$('#message-group').addClass('has-error'); // add the error class to show red input
+						$('#message-group').append('<div class="help-block">' + data.errors.messageText + '</div>'); // add the actual error message under our input
 					}
 
 				} else {

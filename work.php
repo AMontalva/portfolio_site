@@ -22,15 +22,15 @@
         <div class="project__desc">
             <a name="sbu"><h2>Showbiz U</h2></a>
             <h4>The Goal</h4>
-            <p>Build an online community and MOOC for people interested in showbusiness.</p>
+            <p>Build a tool for users to be able to add, delete and read online articles from a database.</p>
             <h4>The Challenges</h4>
-            <p>The development is still in the early stages and gathering requirements has been a long process.</p>
+            <p>Using content from a database and manipulating it.</p>
             <h4>The Solution</h4>
-            <p>My team and I have suggested vanilla forums to be used to create the community for Showbiz U. Currently we are in the process of starting to build the rest of the MOOC.</p>
+            <p>Using PHP and Javascript I was able to get id numbers of content and perform any action with them.</p>
         </div>
         <div class="project__img">
             <!-- <img src="http://placehold.it/400x300"> -->
-            <img src="img/work_sbu.png" alt="showbiz u logo">
+            <img src="img/work_sbu.jpg" alt="showbiz u learning paths tool home page">
         </div>
     </div>
     <div class="project">

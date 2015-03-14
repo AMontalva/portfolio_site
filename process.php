@@ -1,29 +1,33 @@
 <?php
 
-$errors         = array();  	// array to hold validation errors
-$data 			= array(); 		// array to pass back data
+$errors = array();  	// array to hold validation errors
+$data = array(); 		// array to pass back data
 
 // validate the variables ======================================================
 	// if any of these variables don't exist, add an error to our $errors array
 
-	if (empty($_POST['name']))
+	if ( empty($_POST['name']) ) {
 		$errors['name'] = 'Name is required.';
+	}
 
-	if (empty($_POST['email']))
+	if ( empty($_POST['email']) ) {
 		$errors['email'] = 'Email is required.';
+	}
 
-	if (empty($_POST['superheroAlias']))
-		$errors['superheroAlias'] = 'Message is required.';
+	if ( empty($_POST['messageText']) ) {
+		$errors['messageText'] = 'Message is required.';
+	}
 
 // return a response ===========================================================
 
 	// if there are any errors in our errors array, return a success boolean of false
-	if ( ! empty($errors)) {
+	if ( !empty($errors) ) {
 
 		// if there are items in our errors array, return those errors
 		$data['success'] = false;
 		$data['errors']  = $errors;
-	} else {
+	} 
+	else {
 
 		// if there are no errors process our form, then return a message
 
@@ -31,12 +35,12 @@ $data 			= array(); 		// array to pass back data
 		// THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
 	    $name = $_POST['name'];
     	$email = $_POST['email'];
-    	$superheroAlias = $_POST['superheroAlias'];    
+    	$messageText = $_POST['messageText'];    
 	    $from = 'From: "antoniomontalvo.me"'; 
 	    $to = 'antonio.montalvo.87@gmail.com'; 
 	    $subject = 'Hello';
 	            
-	    $body = "From: $name\n E-Mail: $email\n message: $superheroAlias";
+	    $body = "From: $name\n E-Mail: $email\n message: $messageText";
 	                
 	    mail ($to, $subject, $body, $from);
 		// show a message of success and provide a true success variable

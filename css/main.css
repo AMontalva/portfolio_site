@@ -108,7 +108,8 @@ header {
     height: 100px;
     width: 100%;
     display: block;
-    background-color: #FF851B;               
+    background-color: #FF7052;
+    /*background-color: #FF851B;*/
 }
 
 #h1Nav {
@@ -126,7 +127,7 @@ header {
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 10px solid #FFFFFF;
-    background-color: #191919;
+    background-color: #333;
     width: 180px;
     height: 180px;
     margin-left: 0px;
@@ -135,7 +136,7 @@ header {
 #nameText {padding-top: 20px;font-size: 30px;text-align: center;color: #FFFFFF;line-height: 30px;font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#line {padding-top: 10px;width: 80%; margin-left: auto;margin-right: auto;border-bottom: #FF851B solid 1px;
+#line {padding-top: 10px;width: 80%; margin-left: auto;margin-right: auto;border-bottom: #FF7052 solid 1px;
 }
 
 #webText {font-size: 16px;text-align: center;color: #FFFFFF;margin-top: 4px;font-family: 'Open Sans Condensed', sans-serif;
@@ -274,7 +275,7 @@ a#logo {
 }
 .caption a.learn-more {
     padding: 5px 10px;
-    background: #FF851B;
+    background: #FF7052;
     color: #FFFFFF;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -283,7 +284,7 @@ a#logo {
 }
 .caption a.learn-more:hover {
     background: #FFFFFF;
-    color: #FF851B;
+    color: #FF7052;
 }
 
 li#project3, li#project6 {
@@ -333,7 +334,7 @@ li#project3, li#project6 {
 }
 
 #footer a:hover, nav a:active {
-    color: #FF851B;
+    color: #FF7052;
 }
 
 #footerSocialMedia ul {
@@ -477,7 +478,7 @@ textarea {
 }
 
 button[type=submit] {
-    background-color: #FF851B;
+    background-color: #FF7052;
     width:127px;
     height:38px;
     border:none;
@@ -852,7 +853,7 @@ button[type=submit] {
 
     #headerNav a#pull {
         display: block;
-        background-color: #FF851B;
+        background-color: #FF7052;
         width: 100%;
         position: relative;
     }

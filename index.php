@@ -22,7 +22,7 @@
         <li id="project2" class="figure fade">
             <div class="caption">
                 <h3>Showbiz U</h3>
-                <p>Build an online community and MOOC for people interested in showbusiness.</p>
+                <p>Build a content manage system where users can add, delete articles from a playlist and track their progress.</p>
                 <p><a href="http://antoniomontalvo.me/amontalvo/work.html#sbu" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">

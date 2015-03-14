@@ -19,10 +19,10 @@
         <!-- errors will go here -->
     </div>
 
-    <!-- SUPERHERO ALIAS -->
-    <div id="superhero-group" class="form-group">
+    <!-- MESSAGE TEXT -->
+    <div id="message-group" class="form-group">
         <label>Message</label>
-        <textarea name="superheroAlias" cols="30" rows="10" placeholder=""></textarea>
+        <textarea name="messageText" cols="30" rows="10" placeholder=""></textarea>
         <!-- errors will go here -->
     </div>
 
