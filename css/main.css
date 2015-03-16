@@ -176,6 +176,9 @@ a#logo {
     width: 180px;
     font-size: 2.5em;
     font-family: 'Open Sans Condensed', sans-serif;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
 }
 
 #headerNav li:first-child a {
@@ -293,15 +296,18 @@ li#project3, li#project6 {
 
 /*=========footer===========*/
 #footer {
-  width: 100%;
-  clear: both;
-  background-color: #FFFFFF;
-  color: #2D2D2D;
-  font-size: .8em; 
+    width: 100%;
+    clear: both;
+    background-color: #FFFFFF;
+    color: #2D2D2D;
+    font-size: .8em; 
 }
 
 #footer a:link {
-  color: #2D2D2D; 
+    color: #2D2D2D; 
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
 }
 
 #footer a:visited {
@@ -312,25 +318,25 @@ li#project3, li#project6 {
 
 
 #footerContainer {
-  width: 80%;
-  height: 160px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  border-top: 1px solid #D7DBDF;
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-top: 1px solid #D7DBDF;
 
 }
 
 .footerDivider {
-  width: 30%;
-  float: left;
-  padding-left: 1.6%;
-  padding-right: 1.6%; 
+    width: 30%;
+    float: left;
+    padding-left: 1.6%;
+    padding-right: 1.6%; 
 }
 
 #footerNav ul {
-  margin-left: -40px; 
+    margin-left: -40px; 
 }
 
 #footer a:hover, nav a:active {
@@ -338,27 +344,27 @@ li#project3, li#project6 {
 }
 
 #footerSocialMedia ul {
-  margin-left: -40px; 
+    margin-left: -40px; 
 }
 
 #footerContact {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 .verticleLine {
-  border-right: 1px solid #D7DBDF;
-  height: 160px; 
+    border-right: 1px solid #D7DBDF;
+    height: 160px; 
 }
 
 #copywrite {
-  clear: both;
-  border-top: 1px solid #D7DBDF;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto; 
+    clear: both;
+    border-top: 1px solid #D7DBDF;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 
@@ -417,7 +423,7 @@ li#project3, li#project6 {
     padding-bottom: 40px;
 }
 
-.project__desc {
+.work__desc {
     width: 40%;
     float: left;
 }
@@ -427,12 +433,13 @@ li#project3, li#project6 {
     padding: 0;
 }
 
-.project__img {
+.work__img {
     width: 50%;
     float: right;
+    margin-top: 20px;
 }
 
-.project__img img {
+.work__img img {
     width: 100%;
 }
 
@@ -687,6 +694,16 @@ button[type=submit] {
     .caption p {
         font-size: .9em;
     } 
+
+    .work__desc {
+        width: 100%;
+        float: left;
+    }
+
+    .work__img {
+        width: 100%;
+        float: right;
+    }
 }
 
 @media (max-width: 680px) {

@@ -84,6 +84,12 @@
                     function() {
                         $("#nameText").css("color", "#FF7052");
                         $("#webText").css("color", "#FF7052");
+                        $("#nameText").css("-webkit-transition", "all 0.2s linear 0s");
+                        $("#nameText").css("-moz-transition", "all 0.2s linear 0s");
+                        $("#nameText").css("-o-transition", "all 0.2s linear 0s");
+                        $("#webText").css("-webkit-transition", "all 0.2s linear 0s");
+                        $("#webText").css("-moz-transition", "all 0.2s linear 0s");
+                        $("#webText").css("-o-transition", "all 0.2s linear 0s");
                     },
                     function() {
                         $("#nameText").css("color", "#FFFFFF");
