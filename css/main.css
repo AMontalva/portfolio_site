@@ -269,7 +269,7 @@ a#logo {
     margin: 20px;
 }
 .caption h3 {
-    margin: 60px 20px 10px;
+    margin: 24px 20px 10px;
 }
 .caption p {
     font-size: .75em;
@@ -284,6 +284,9 @@ a#logo {
     -moz-border-radius: 2px;
     font-weight: bold;
     text-decoration: none;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
 }
 .caption a.learn-more:hover {
     background: #FFFFFF;
@@ -368,9 +371,9 @@ li#project3, li#project6 {
 }
 
 
-/*==================ABOUT.HTML===================*/
-/*==================ABOUT.HTML===================*/
-/*==================ABOUT.HTML===================*/
+/*==================ABOUT.PHP===================*/
+/*==================ABOUT.PHP===================*/
+/*==================ABOUT.PHP===================*/
 
 #about {
     width: 60%;
@@ -401,9 +404,9 @@ li#project3, li#project6 {
     }
 }
 
-/*==================WORK.HTML===================*/
-/*==================WORK.HTML===================*/
-/*==================WORK.HTML===================*/
+/*==================WORK.PHP===================*/
+/*==================WORK.PHP===================*/
+/*==================WORK.PHP===================*/
 
 #work {
     width: 80%;
@@ -443,13 +446,22 @@ li#project3, li#project6 {
     width: 100%;
 }
 
-/*==================CONTACT.HTML===================*/
-/*==================CONTACT.HTML===================*/
-/*==================CONTACT.HTML===================*/
+/*==================CONTACT.PHP===================*/
+/*==================CONTACT.PHP===================*/
+/*==================CONTACT.PHP===================*/
+
+#contact {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    padding-top: 20px;
+}
 
 form {
     clear: both;
-    width:459px;
+    width: 459px;
     margin:0 auto;
     margin-bottom: 40px;
 }
@@ -461,7 +473,8 @@ label {
 }
 
 input, textarea {
-    width:439px;
+    /*width:439px;*/
+    width: 100%;
     height:27px;
     background:#efefef;
     border-radius:5px;
@@ -469,14 +482,15 @@ input, textarea {
     -webkit-border-radius:5px;
     border:1px solid #dedede;
     padding:10px;
+    padding: 2%;
     margin-top:3px;
     font-size:0.9em;
     color:#3a3a3a;
 }
 
-    input:focus, textarea:focus {
-        border:1px solid #97d6eb;
-    }
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
 
 textarea {
     height:213px;
@@ -492,11 +506,15 @@ button[type=submit] {
     margin-top:20px;
     cursor:pointer;
     color: #FFFFFF;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
 }
 
-    button[type=submit]:hover {
-        opacity:0.9;
-    }
+button[type=submit]:hover {
+    opacity:0.8;
+}
+
 
 
 
@@ -704,6 +722,15 @@ button[type=submit] {
         width: 100%;
         float: right;
     }
+
+    #contact {
+        width: 96%;
+    }
+
+    form {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 680px) {
@@ -873,6 +900,9 @@ button[type=submit] {
         background-color: #FF7052;
         width: 100%;
         position: relative;
+        -webkit-transition: all 0.2s linear 0s;
+        -moz-transition: all 0.2s linear 0s;
+        -o-transition: all 0.2s linear 0s;
     }
 
     #headerNav a#pull:after {

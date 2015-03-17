@@ -1,7 +1,10 @@
 <?php $title = "Work"; ?>
 <?php include("header.php"); ?>
 
+
+
 <div id="work">
+    <h1>Work</h1>
     <div class="project">
         <a name="steele"><h2>Steele Clarke Smith III Website</h2></a>
         <div class="work__img">

@@ -2,8 +2,9 @@
 <?php include("header.php"); ?>
 
 <div id="about">
+    <h1>About</h1>
     <h2>Who I am</h2>
-    <p>My name is Antonio Montalvo, I live in Anaheim, CA. My hobbies include reading comic books, doing yoga, watch movies and learning anything that has to do with web design and development.</p>
+    <p>My name is Antonio Montalvo, I live in Anaheim, CA. My hobbies include reading comic books, watching movies and learning anything that has to do with web design and development.</p>
 
     <h2>Education</h2>
     <p>I am currently a student at UC Irvine where I am pursuing a degree in Informatics with a specialization of Human Computer Interaction. This program has taught me UX and software engineering skills.</p>
