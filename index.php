@@ -13,7 +13,7 @@
             <div class="caption">
                 <h3>Steele Clarke Smith III</h3>
                 <p>Steele Clarke Smith III wanted to redesign his personal website by making it more modern as well as using a dark color scheme.</p>
-                <p><a href="http://antoniomontalvo.me/amontalvo/work.html#steele" class="learn-more">Learn more</a></p>
+                <p><a href="work.php#steele" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -23,7 +23,7 @@
             <div class="caption">
                 <h3>Showbiz U</h3>
                 <p>Build a content manage system where users can add, delete articles from a playlist and track their progress.</p>
-                <p><a href="http://antoniomontalvo.me/amontalvo/work.html#sbu" class="learn-more">Learn more</a></p>
+                <p><a href="work.php#sbu" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -34,7 +34,7 @@
             <div class="caption">
                 <h3>RG Consulting</h3>
                 <p>Build a website for a fictional consulting company.</p>
-                <p><a href="http://antoniomontalvo.me/amontalvo/work.html#rg" class="learn-more">Learn more</a></p>
+                <p><a href="work.php#rg" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -45,7 +45,7 @@
             <div class="caption">
                 <h3>Pomodoro</h3>
                 <p>Build a pomodoro application with Angular.js.</p>
-                <p><a href="http://antoniomontalvo.me/amontalvo/work.html#pomodoro" class="learn-more">Learn more</a></p>
+                <p><a href="work.php#pomodoro" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -56,7 +56,7 @@
             <div class="caption">
                 <h3>Dynamic Quiz</h3>
                 <p>Build a quiz using Javascript. I created this after relearning Javascript and making a project so what I learned would stick.</p>
-                <p><a href="http://antoniomontalvo.me/amontalvo/work.html#quiz" class="learn-more">Learn more</a></p>
+                <p><a href="work.php#quiz" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -67,7 +67,7 @@
             <div class="caption">
                 <h3>Beach Boys Angular Discography</h3>
                 <p>Build a application that can filter through a search with Angular.js.</p>
-                <p><a href="http://antoniomontalvo.me/amontalvo/work.html#bboys" class="learn-more">Learn more</a></p>
+                <p><a href="work.php#bboys" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
