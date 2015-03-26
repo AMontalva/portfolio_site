@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <script type="text/javascript">document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="h1Nav">
+            <div id= "logo">
+                <a href="index.html">                  
+                <div id="circle">
+                  <div id="nameText">
+                    Antonio <br/>Montalvo
+                  </div>
+                  <div id="line"></div>
+                  <div id="webText">Web Designer/Developer</div>
+                </div>
+                </a>
+            </div>
+
+          <nav id="headerNav" class="clearfix">
+            <ul class="clearfix">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="work.html">Work</a></li>                   
+            </ul>
+            <a href="#" id="pull">Menu<div id="navicon">&#9776;</div></a>
+          </nav>
+
+        </div>
+    </header>
+
+<div id="about">
+    <h1>About</h1>
+    <h2>Who I am</h2>
+    <p>My name is Antonio Montalvo, I live in Anaheim, CA. My hobbies include reading comic books, watching movies and learning anything that has to do with web design and development.</p>
+
+    <h2>Education</h2>
+    <p>I am currently a student at UC Irvine where I am pursuing a degree in Informatics with a specialization of Human Computer Interaction. This program has taught me UX and software engineering skills.</p>
+
+    <h2>Skills</h2>
+    <p>I am most skilled in front end development, but am in the process of learning some backend with PHP and MySQL.</p>
+
+    <div class="about__skill_frontend">
+        <h4>Front End</h4>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Angular.js</li>
+            <li>Wordpress</li>
+            <li>Bootstrap</li>
+            <li>SASS/LESS</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+    <div class="about__skill_software">
+        <h4>Software</h4>
+        <ul>
+            <li>Github</li>
+            <li>Eclipse</li>
+            <li>Balsamiq</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Dreamweaver</li>
+        </ul>
+    </div>   
+</div>
+
+
+            <div id="footer">
+                <div id="footerContainer">
+                    <nav id="footerNav" class="footerDivider verticleLine">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="work.html">Work</a></li>  
+                        </ul>
+                    </nav>
+
+                    <nav id="footerSocialMedia" class="footerDivider verticleLine">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/pub/antonio-montalvo/96/436/b5">LinkedIn</a></li>
+                            <li><a href="https://github.com/AMontalva">Github</a></li>
+                        </ul>
+                    </nav>
+                    <div id="footerContact" class="footerDivider"> 
+                        <h3>Get In Touch</h3>
+                        <p>antonio.montalvo.87@gmail.com</p>
+                    </div>
+
+                </div>
+                <div id="copywrite">
+                    Copyright © 2015 Antonio Montalvo. All rights reserved.
+                </div>
+            </div>  
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="js/jquery.hcaptions.js"></script>               
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/magic.js"></script>
+
+        <script>
+            // responsive dropdown
+            $(function() {
+                var pull        = $('#pull');
+                    menu        = $('nav ul');
+                    menuHeight  = menu.height();
+
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+
+                $(window).resize(function(){
+                    var w = $(window).width();
+                    if(w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+
+        </script>
+
+        <script>
+            // hover popup on work
+            $(document).ready(function() {
+                $('.fade').hover(
+                    function() {
+                        var w = $(this).width();
+                        var h = $(this).height();
+
+                        $(".caption").css({"width": w, "height": h});
+                        $(this).find('.caption').fadeIn(250);
+                        console.log(w, h);
+                    },
+                    function() {
+                        $(this).find('.caption').fadeOut(250);
+                    }
+                );
+            });
+
+            // hover color change on logo
+            $(document).ready(function() {
+                $("#logo").hover(
+                    function() {
+                        $("#nameText").css("color", "#FF7052");
+                        $("#webText").css("color", "#FF7052");
+                        $("#nameText").css("-webkit-transition", "all 0.2s linear 0s");
+                        $("#nameText").css("-moz-transition", "all 0.2s linear 0s");
+                        $("#nameText").css("-o-transition", "all 0.2s linear 0s");
+                        $("#webText").css("-webkit-transition", "all 0.2s linear 0s");
+                        $("#webText").css("-moz-transition", "all 0.2s linear 0s");
+                        $("#webText").css("-o-transition", "all 0.2s linear 0s");
+                    },
+                    function() {
+                        $("#nameText").css("color", "#FFFFFF");
+                        $("#webText").css("color", "#FFFFFF");
+                    }
+                );
+            });
+        </script>
+
+    </body>
+</html>
