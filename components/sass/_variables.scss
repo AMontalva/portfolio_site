@@ -1,6 +1,12 @@
 // _variables.scss
 // =================
- 
+
+@import "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+
 $white: #FFFFFF;
-$dark_gray: #333333;
-$red_pink: #FF7052;
+$darkGray: #333333;
+$mainColor: #FF7052;
+$formBackground: #EFEFEF;
+$lightGray: #DEDEDE;
+
+$openSansCondensed : 'Open Sans Condensed', sans-serif;

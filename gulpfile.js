@@ -10,7 +10,10 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var jsSources = [
-  'components/js/magic.js'
+  'components/js/magic.js',
+  'components/js/responsive_dropdown.js',
+  'components/js/hover.js',
+  'components/js/googleanalytics.js'
 ];
 var sassSources = ['components/sass/style.scss'];
 var htmlSources = ['builds/development/*.html'];
@@ -68,7 +71,7 @@ gulp.task('production', function() {
   gulp.src(cssSources)  
     .pipe(minifycss())
     .pipe(gulp.dest('builds/production/css'))
-  gulp.src(jsSources)
+  gulp.src('builds/development/js/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('builds/production/js'))
   gulp.src(jsonSources)

@@ -1,14 +1,23 @@
 <!doctype html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript">document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
     <header>
         <div id="h1Nav">
             <div id= "logo">
@@ -46,7 +55,7 @@
             <div class="caption">
                 <h3>Steele Clarke Smith III</h3>
                 <p>Steele Clarke Smith III wanted to redesign his personal website by making it more modern as well as using a dark color scheme.</p>
-                <p><a href="work.php#steele" class="learn-more">Learn more</a></p>
+                <p><a href="work.html#steele" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -56,7 +65,7 @@
             <div class="caption">
                 <h3>Showbiz U</h3>
                 <p>Build a content manage system where users can add, delete articles from a playlist and track their progress.</p>
-                <p><a href="work.php#sbu" class="learn-more">Learn more</a></p>
+                <p><a href="work.html#sbu" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -67,7 +76,7 @@
             <div class="caption">
                 <h3>RG Consulting</h3>
                 <p>Build a website for a fictional consulting company.</p>
-                <p><a href="work.php#rg" class="learn-more">Learn more</a></p>
+                <p><a href="work.html#rg" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -78,7 +87,7 @@
             <div class="caption">
                 <h3>Pomodoro</h3>
                 <p>Build a pomodoro application with Angular.js.</p>
-                <p><a href="work.php#pomodoro" class="learn-more">Learn more</a></p>
+                <p><a href="work.html#pomodoro" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -89,7 +98,7 @@
             <div class="caption">
                 <h3>Dynamic Quiz</h3>
                 <p>Build a quiz using Javascript. I created this after relearning Javascript and making a project so what I learned would stick.</p>
-                <p><a href="work.php#quiz" class="learn-more">Learn more</a></p>
+                <p><a href="work.html#quiz" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -100,7 +109,7 @@
             <div class="caption">
                 <h3>Beach Boys Angular Discography</h3>
                 <p>Build a application that can filter through a search with Angular.js.</p>
-                <p><a href="work.php#bboys" class="learn-more">Learn more</a></p>
+                <p><a href="work.html#bboys" class="learn-more">Learn more</a></p>
             </div>                    
             <a href="#">
                 <!-- <img src="http://placehold.it/500x500"> -->
@@ -140,75 +149,6 @@
                 </div>
             </div>  
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script src="js/jquery.hcaptions.js"></script>               
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/magic.js"></script>
-
-        <script>
-            // responsive dropdown
-            $(function() {
-                var pull        = $('#pull');
-                    menu        = $('nav ul');
-                    menuHeight  = menu.height();
-
-                $(pull).on('click', function(e) {
-                    e.preventDefault();
-                    menu.slideToggle();
-                });
-
-                $(window).resize(function(){
-                    var w = $(window).width();
-                    if(w > 320 && menu.is(':hidden')) {
-                        menu.removeAttr('style');
-                    }
-                });
-            });
-
-        </script>
-
-        <script>
-            // hover popup on work
-            $(document).ready(function() {
-                $('.fade').hover(
-                    function() {
-                        var w = $(this).width();
-                        var h = $(this).height();
-
-                        $(".caption").css({"width": w, "height": h});
-                        $(this).find('.caption').fadeIn(250);
-                        console.log(w, h);
-                    },
-                    function() {
-                        $(this).find('.caption').fadeOut(250);
-                    }
-                );
-            });
-
-            // hover color change on logo
-            $(document).ready(function() {
-                $("#logo").hover(
-                    function() {
-                        $("#nameText").css("color", "#FF7052");
-                        $("#webText").css("color", "#FF7052");
-                        $("#nameText").css("-webkit-transition", "all 0.2s linear 0s");
-                        $("#nameText").css("-moz-transition", "all 0.2s linear 0s");
-                        $("#nameText").css("-o-transition", "all 0.2s linear 0s");
-                        $("#webText").css("-webkit-transition", "all 0.2s linear 0s");
-                        $("#webText").css("-moz-transition", "all 0.2s linear 0s");
-                        $("#webText").css("-o-transition", "all 0.2s linear 0s");
-                    },
-                    function() {
-                        $("#nameText").css("color", "#FFFFFF");
-                        $("#webText").css("color", "#FFFFFF");
-                    }
-                );
-            });
-        </script>
-
+        <script src="js/script.js"></script>
     </body>
 </html>

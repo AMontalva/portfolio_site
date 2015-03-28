@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $white;
 }
 
 header {
@@ -8,7 +8,7 @@ header {
     height: 100px;
     width: 100%;
     display: block;
-    background: #FF7052;
+    background-color: $mainColor;
 }
 
 form {
@@ -26,17 +26,17 @@ label {
 
 input, textarea {
     width: 100%;
-    height:27px;
-    background:#efefef;
-    border-radius:5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border:1px solid #dedede;
-    padding:10px;
+    height: 27px;
+    background-color: $formBackground;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid $lightGray;
+    padding: 10px;
     padding: 2%;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: $darkGray;
 }
 
 input:focus, textarea:focus {
@@ -46,17 +46,17 @@ input:focus, textarea:focus {
 textarea {
     height:213px;
     font-family:Arial, Helvetica, sans-serif;
-    background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+    background:url(images/textarea-bg.jpg) right no-repeat $formBackground;
 }
 
 button[type=submit] {
-    background: #FF7052;
+    background-color: $mainColor;
     width:127px;
     height:38px;
     border:none;
     margin-top:20px;
     cursor:pointer;
-    color: #FFFFFF;
+    color: $white;
     -webkit-transition: all 0.2s linear 0s;
     -moz-transition: all 0.2s linear 0s;
     -o-transition: all 0.2s linear 0s;

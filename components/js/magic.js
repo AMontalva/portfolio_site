@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 // magic.js
 $(document).ready(function() {
 

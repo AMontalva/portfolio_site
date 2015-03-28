@@ -16,20 +16,20 @@
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
-    border: 10px solid #FFFFFF;
-    background-color: #333;
+    border: 10px solid $white;
+    background-color: $darkGray;
     width: 180px;
     height: 180px;
     margin-left: 0px;
 }
 
-#nameText {padding-top: 20px;font-size: 30px;text-align: center;color: #FFFFFF;line-height: 30px;font-family: 'Open Sans Condensed', sans-serif;
+#nameText {padding-top: 20px;font-size: 30px;text-align: center;color: $white;line-height: 30px;font-family: $openSansCondensed;
 }
 
 #line {padding-top: 10px;width: 80%; margin-left: auto;margin-right: auto;border-bottom: #FF7052 solid 1px;
 }
 
-#webText {font-size: 16px;text-align: center;color: #FFFFFF;margin-top: 4px;font-family: 'Open Sans Condensed', sans-serif;
+#webText {font-size: 16px;text-align: center;color: $white;margin-top: 4px;font-family: $openSansCondensed;
 }
 
 a#logo {
@@ -53,14 +53,14 @@ a#logo {
 }
 
 #headerNav li a {
-    border-right: 1px solid #FFFFFF;
-    color: #FFFFFF;
+    border-right: 1px solid $white;
+    color: $white;
     display: inline-block;
     text-align: center;
     text-decoration: none;
     width: 180px;
     font-size: 2.5em;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: $openSansCondensed;
     -webkit-transition: all 0.2s linear 0s;
     -moz-transition: all 0.2s linear 0s;
     -o-transition: all 0.2s linear 0s;
@@ -71,7 +71,7 @@ a#logo {
 }
 
 #headerNav a:hover, nav a:active {
-    color: #191919;
+    color: $darkGray;
 }
 
 #headerNav a#pull {
@@ -90,7 +90,7 @@ a#logo {
     margin-left: auto;
     margin-right: auto;
     margin-top: 110px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: $openSansCondensed;
     padding-top: 4px;
     padding-bottom: 4px;
 }
@@ -100,7 +100,7 @@ a#logo {
     clear: both;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: $openSansCondensed;
 }
 
 #workContainer h2 {
@@ -129,10 +129,6 @@ a#logo {
     font-style: bold;
 }
 
-.figure a {
-    color: #191919;
-}
-
 .figure img {
     width: 100%;
     -webkit-border-radius: 4px;
@@ -146,10 +142,10 @@ a#logo {
 .caption {
     display: none;
     position: absolute;
-    background: rgba(0, 0, 0, 0.70);
+    background-color: rgba(0, 0, 0, 0.70);
 }
 .caption h3, .caption p {
-    color: #FFFFFF;
+    color: $white;
     margin: 20px;
 }
 .caption h3 {
@@ -162,8 +158,8 @@ a#logo {
 }
 .caption a.learn-more {
     padding: 5px 10px;
-    background: #FF7052;
-    color: #FFFFFF;
+    background-color: $mainColor;
+    color: $white;
     border-radius: 2px;
     -moz-border-radius: 2px;
     font-weight: bold;
@@ -173,8 +169,8 @@ a#logo {
     -o-transition: all 0.2s linear 0s;
 }
 .caption a.learn-more:hover {
-    background: #FFFFFF;
-    color: #FF7052;
+    background-color: $white;
+    color: $mainColor;
 }
 
 li#project3, li#project6 {
@@ -189,20 +185,20 @@ li#project3, li#project6 {
 #footer {
     width: 100%;
     clear: both;
-    background-color: #FFFFFF;
-    color: #2D2D2D;
+    background-color: $white;
+    color: $darkGray;
     font-size: .8em; 
 }
 
 #footer a:link {
-    color: #2D2D2D; 
+    color: $darkGray; 
     -webkit-transition: all 0.2s linear 0s;
     -moz-transition: all 0.2s linear 0s;
     -o-transition: all 0.2s linear 0s;
 }
 
 #footer a:visited {
-    color: #2D2D2D;
+    color: $darkGray;
 }
 
 #footerContainer {
@@ -212,7 +208,7 @@ li#project3, li#project6 {
     margin-right: auto;
     padding-top: 20px;
     padding-bottom: 5px;
-    border-top: 1px solid #D7DBDF;
+    border-top: 1px solid $lightGray;
 }
 
 .footerDivider {
@@ -227,7 +223,7 @@ li#project3, li#project6 {
 }
 
 #footer a:hover, nav a:active {
-    color: #FF7052;
+    color: $mainColor;
 }
 
 #footerSocialMedia ul {
@@ -239,13 +235,13 @@ li#project3, li#project6 {
 }
 
 .verticleLine {
-    border-right: 1px solid #D7DBDF;
+    border-right: 1px solid $lightGray;
     height: 160px; 
 }
 
 #copywrite {
     clear: both;
-    border-top: 1px solid #D7DBDF;
+    border-top: 1px solid $lightGray;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -323,13 +319,13 @@ li#project3, li#project6 {
     width: 50%;
     float: right;
     margin-top: 20px;
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .work__img img {
     width: 100%;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*==================CONTACT.PHP===================*/
