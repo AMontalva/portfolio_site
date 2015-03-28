@@ -4,3 +4,4 @@ node_modules
 .sass-cache
 builds/development/images/*
 builds/production/images/*
+highqualityimages/*

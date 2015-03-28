@@ -65,8 +65,11 @@ gulp.task('json', function() {
 });
 
 gulp.task('production', function() {
+  var opts = {
+    quotes: true
+  }
   gulp.src(htmlSources)
-    .pipe(minifyHTML())
+    .pipe(minifyHTML(opts))
     .pipe(gulp.dest('builds/production'))
   gulp.src(cssSources)  
     .pipe(minifycss())
