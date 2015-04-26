@@ -1082,6 +1082,14 @@ li#project3, li#project6 {
   padding-top: 20px;
 }
 
+.help-block {
+  color: #f44336;
+}
+
+.alert-success {
+  color: #8bc34a;
+}
+
 @media (max-width: 1220px) {
   #headerNav li a {
     width: 160px;
@@ -1209,25 +1217,24 @@ li#project3, li#project6 {
   }
 }
 @media screen and (max-width: 560px) {
-  #headerNav ul {
-    width: 80px;
-    margin-top: -16px;
-  }
-
-  #headerNav li a {
-    width: 60px;
-    font-size: 1em;
-    margin-top: 0px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-right: none;
-    border-bottom: 1px solid #FFFFFF;
-  }
-
-  #headerNav li:last-child a {
-    border-bottom: 0;
-  }
-
+  /*    #headerNav ul {
+          width: 80px;
+          margin-top: -16px;
+      }
+  
+      #headerNav li a {
+          width: 60px;
+          font-size: 1em;
+          margin-top: 0px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          border-right: none;
+          border-bottom: 1px solid #FFFFFF;
+      }
+  
+      #headerNav li:last-child a {
+          border-bottom: 0;
+      }*/
   #tagline {
     display: block;
     margin-top: 40px;
@@ -1269,16 +1276,7 @@ li#project3, li#project6 {
     font-size: .9em;
   }
 }
-@media (max-width: 360px) {
-  .caption h3 {
-    font-size: 1.5em;
-  }
-
-  .caption p {
-    font-size: 1.2em;
-  }
-}
-@media (max-width: 340px) {
+@media (max-width: 480px) {
   header {
     height: auto;
     width: 100%;
@@ -1330,6 +1328,7 @@ li#project3, li#project6 {
 
   #headerNav li a {
     width: 100%;
+    border-right: none;
   }
 
   #headerNav a#pull {
@@ -1356,6 +1355,15 @@ li#project3, li#project6 {
 
   a#pull:active, a#pull:focus {
     outline: none;
+  }
+}
+@media (max-width: 360px) {
+  .caption h3 {
+    font-size: 1.5em;
+  }
+
+  .caption p {
+    font-size: 1.2em;
   }
 }
 @media (max-width: 302px) {
